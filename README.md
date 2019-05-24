@@ -1,4 +1,4 @@
-# Anomaly Finder (REST API) - Jupyter notebook
+# Anomaly Detector (REST API) - Jupyter notebook
 This Jupyter notebook can be used to detect anomalies with the Microsoft Cognitive Service - Anomaly Detector. This is a RESTful web service that can be used easily embed anomaly detection capabilities into your apps so your users can quickly identify problems to minimize loss and customer impact.
 
 The service requires no extensive knowledge about machine learning techniques. The user can simply use the API to ingest time-series data of all types and volumes and make use of the pre-trained AI models that are included in the service. The service selects the best-fitting anomaly detection model for your data to ensure high accuracy, and automatically surfaces incidents as soon as they happen.
@@ -10,8 +10,8 @@ The parameters can be understood as settings and are adjustable according to you
 
 * `BATCH_DETECTION_URL`: Endpoint path for the prediction of anomalies for a whole batch of timeseries data. Generally, this value must not be changed by the user.
 * `LATEST_POINT_DETECTION_URL`: Endpoint for the prediction of anomalies for the last point in the timeseries data. Generally, this value must not be changed by the user.
-* `ENDPOINT`: Endpoint of the Cognitive Service. The Anomaly Finder service can be deployed in different Azure regions and the region in the endpoint URI must be adjusted accordingly. The base URL has the following format, whereas the correct region must be inserted in `<your-region>` (e.g. `westeurope`, `westus2`, etc.): `https://<your-region>.api.cognitive.microsoft.com/`
-* `SUBSCRIPTION_KEY`: Insert the subscription key of your Anomaly Finder deployment. This can be found in the Azure Portal. 
+* `ENDPOINT`: Endpoint of the Cognitive Service. The Anomaly Detector service can be deployed in different Azure regions and the region in the endpoint URI must be adjusted accordingly. The base URL has the following format, whereas the correct region must be inserted in `<your-region>` (e.g. `westeurope`, `westus2`, etc.): `https://<your-region>.api.cognitive.microsoft.com/`
+* `SUBSCRIPTION_KEY`: Insert the subscription key of your Anomaly Detector deployment. This can be found in the Azure Portal. 
 * `USE_POWER_BI`: `True`, if you want to stream data to Microosft Power BI and `False`, if you don't. Please read the next section for more details.
 * `POWER_BI_REST_API_URL`: Streaming data endpoint for Power BI. Please read the next section for more details.
 * `TIMESTAMP_COL_NAME`: Header name of the timestamp column.
@@ -33,7 +33,7 @@ For the latest point anomaly detection I implemented a data streaming functional
 
 <img src="media/powerbi.png" alt="Power BI Streaming dataset" width="300"/>
 
-## Anomaly Finder documentation
-Find more details about the use of the Anomaly Finder on the following website: https://docs.microsoft.com/en-us/azure/cognitive-services/anomaly-detector/
+## Anomaly Detector documentation
+Find more details about the use of the Anomaly Detector on the following website: https://docs.microsoft.com/en-us/azure/cognitive-services/anomaly-detector/
 
 For more information on how to deploy the Cognitive Service on Azure, please read: https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account
