@@ -33,6 +33,9 @@ For the latest point anomaly detection I implemented a data streaming functional
 
 <img src="media/powerbi.png" alt="Power BI Streaming dataset" width="300"/>
 
+## Run Anomaly Detector in local Docker container
+The Anomaly Detector Service also supports local deployment in a Docker container. Please follow [this guide](https://docs.microsoft.com/en-us/azure/cognitive-services/anomaly-detector/anomaly-detector-container-howto) to use this functionality. If the local deployment was successful, you can open http://localhost:5000/ to validate whether the Docker image is running. Now you can use either http://localhost:5000/swagger and curl or the notebook in this repository to test the service. If you want to use the notebook, just set the `ENDPOINT` to http://localhost:5000 (`ENDPOINT = "http://localhost:5000"`) and you are good to go.
+
 ## Anomaly Detector documentation
 Find more details about the use of the Anomaly Detector on the following website: https://docs.microsoft.com/en-us/azure/cognitive-services/anomaly-detector/
 
