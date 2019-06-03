@@ -24,12 +24,13 @@ For the latest point anomaly detection I implemented a data streaming functional
 1. Login to [Power BI](https://powerbi.microsoft.com/en-us/).
 2. Open `My Workspace`.
 3. Click on `+ Create`.
-4. Create a new streaming dataset.
-5. Select a name for the dataset.
-6. Add values to the dataset (see image below).
-7. Copy the `Push URL` of the streaming dataset and assign the value to the `POWER_BI_REST_API_URL` variable.
-8. Set `USE_POWER_BI` to `True`.
-9. Run one of the cells in 6.2.
+4. Select `API`
+5. Create a new streaming dataset.
+6. Select a name for the dataset.
+7. Add values to the dataset (see image below).
+8. Copy the `Push URL` of the streaming dataset and assign the value to the `POWER_BI_REST_API_URL` variable.
+9. Set `USE_POWER_BI` to `True`.
+10. Run one of the cells in 6.2.
 
 <img src="media/powerbi.png" alt="Power BI Streaming dataset" width="300"/>
 
