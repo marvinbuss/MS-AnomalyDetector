@@ -40,8 +40,9 @@ For the latest point anomaly detection I implemented a data streaming functional
 17. Click on `+ Add value` and select a value of your dataset.
 18. Now select `Next` and then `Apply`.
 19. Add additional tiles to your dashboard.
-9. Set `USE_POWER_BI` to `True` in the Jupyter notebook.
-10. Run one of the cells below `6.2 Latest point` in the Jupyter notebook.
+20. Set `USE_POWER_BI` to `True` in the Jupyter notebook.
+21. Run one of the cells below `6.2 Latest point` in the Jupyter notebook.
+22. When running one of the cells in the Jupyter notebook, check the dashboard on Power BI. The dashboard shows you the data stream in real-time.
 
 <img src="media/powerbi.png" alt="Power BI Streaming dataset" width="300"/>
 
