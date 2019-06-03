@@ -25,13 +25,29 @@ For the latest point anomaly detection I implemented a data streaming functional
 2. Open `My Workspace`.
 3. Click on `+ Create`.
 4. Create a new streaming dataset.
-5. Select a name for the dataset.
-6. Add values to the dataset (see image below).
-7. Copy the `Push URL` of the streaming dataset and assign the value to the `POWER_BI_REST_API_URL` variable.
-8. Set `USE_POWER_BI` to `True`.
-9. Run one of the cells in 6.2.
+5. Select `API`
+6. Select a name for the dataset.
+7. Add values to the dataset (see image below). Historic data analysis can be turned on.
+8. Select `Create`.
+9. Copy the `Push URL` of the streaming dataset and assign the value to the `POWER_BI_REST_API_URL` variable in the Jupyter notebook.
+10. Select `Done` on the PowerBI Website.
+11. Click on `+ Create`.
+12. Create a new dashboard.
+13. Choose a name for your new dashboard and select `Create`.
+14. Select `+ Add Tile` (In the new PowerBI Frontend the button might be hidden behind the `...` option).
+15. Select `Custom Streaming Data` and then `Next`.
+16. Now select your streaming dataset and then `Next`.
+17. Click on `+ Add value` and select a value of your dataset.
+18. Now select `Next` and then `Apply`.
+19. Add additional tiles to your dashboard.
+20. Set `USE_POWER_BI` to `True` in the Jupyter notebook.
+21. Run one of the cells below `6.2 Latest point` in the Jupyter notebook.
+22. When running one of the cells in the Jupyter notebook, check the dashboard on Power BI. The dashboard shows you the data stream in real-time.
 
 <img src="media/powerbi.png" alt="Power BI Streaming dataset" width="300"/>
+
+## Run Anomaly Detector in local Docker container
+The Anomaly Detector Service also supports local deployment in a Docker container. Please follow [this guide](https://docs.microsoft.com/en-us/azure/cognitive-services/anomaly-detector/anomaly-detector-container-howto) to use this functionality. If the local deployment was successful, you can open http://localhost:5000/ to validate whether the Docker image is running. Now you can use either http://localhost:5000/swagger and curl or the notebook in this repository to test the service. If you want to use the notebook, just set the `ENDPOINT` to http://localhost:5000 (`ENDPOINT = "http://localhost:5000"`) and you are good to go.
 
 ## Anomaly Detector documentation
 Find more details about the use of the Anomaly Detector on the following website: https://docs.microsoft.com/en-us/azure/cognitive-services/anomaly-detector/
