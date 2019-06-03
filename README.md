@@ -24,13 +24,24 @@ For the latest point anomaly detection I implemented a data streaming functional
 1. Login to [Power BI](https://powerbi.microsoft.com/en-us/).
 2. Open `My Workspace`.
 3. Click on `+ Create`.
-4. Select `API`
-5. Create a new streaming dataset.
+4. Create a new streaming dataset.
+5. Select `API`
 6. Select a name for the dataset.
-7. Add values to the dataset (see image below).
-8. Copy the `Push URL` of the streaming dataset and assign the value to the `POWER_BI_REST_API_URL` variable.
-9. Set `USE_POWER_BI` to `True`.
-10. Run one of the cells in 6.2.
+7. Add values to the dataset (see image below). Historic data analysis can be turned on.
+8. Select `Create`.
+9. Copy the `Push URL` of the streaming dataset and assign the value to the `POWER_BI_REST_API_URL` variable in the Jupyter notebook.
+10. Select `Done` on the PowerBI Website.
+11. Click on `+ Create`.
+12. Create a new dashboard.
+13. Choose a name for your new dashboard and select `Create`.
+14. Select `+ Add Tile` (In the new PowerBI Frontend the button might be hidden behind the `...` option).
+15. Select `Custom Streaming Data` and then `Next`.
+16. Now select your streaming dataset and then `Next`.
+17. Click on `+ Add value` and select a value of your dataset.
+18. Now select `Next` and then `Apply`.
+19. Add additional tiles to your dashboard.
+9. Set `USE_POWER_BI` to `True` in the Jupyter notebook.
+10. Run one of the cells below `6.2 Latest point` in the Jupyter notebook.
 
 <img src="media/powerbi.png" alt="Power BI Streaming dataset" width="300"/>
 
